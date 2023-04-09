@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+nav {
+  background-color: white;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: auto;
+}
+
+#logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 50px;
+  align-self: center;
+}
+
+.signup {
+  font-family: Inter, sans-serif;
+  color: black;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.signup.wide{
+  border-bottom: 3px solid #EFC7CF;
+}
+
+.container {
+  margin-left: 5%;
+  background-color: #D6E8E0;
+  min-height: 75vh;
+  box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.container.wide {
+  margin-left: 0;
+  max-width: 60%;
+}
+
+.container.shrink {
+  animation: shrinkContainer 0.5s ease-in-out;
+}
+
+@keyframes shrinkContainer {
+  0% {
+    max-width: 100%;
+  }
+  100% {
+    max-width: 60%;
+  }
+}
+
+.container.deshrink {
+  animation: deshrinkContainer 0.5s ease-in-out;
+}
+
+@keyframes deshrinkContainer {
+  0% {
+    max-width: 60%;
+  }
+  100% {
+    max-width: 100%;
+  }
+}
+
+.information {
+  height: 100%;
+  max-width: 500px;
+  margin-left: 15%;
+}
+
+.form{
+  background-color: aqua;
+  height: 100%;
+  max-width: 630px;
+  align-self: center;
+}
+
+#text{
+  margin-top: 25%;
+  width: 100%;
+}
+
+#text2{
+  width: 100%;
+  align-self: center;
+}
+
+p{
+  font-family: Inter, sans-serif;
+  color: black;
+  font-weight: lighter;
+  font-size: 19px;
+}
+
+.store{
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#apple{
+  width: 50%;
+}
+
+#google{
+  width: 50%;
+  margin-left: 5%;
+}
+
+#tel{
+  position: absolute;
+  top: 70px;
+  left: calc(80vw - 500px);
+  max-height: 760px;
+  transition: all 0.5s ease-in-out;
+}
+
+#tel.wide{
+  position: absolute;
+  top: 30px;
+  left: calc(80vw - 450px);
+  max-height: 740px;
+}
