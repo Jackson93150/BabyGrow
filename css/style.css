@@ -25,6 +25,7 @@ nav {
   color: black;
   margin-right: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .signup.wide{
@@ -76,11 +77,18 @@ nav {
   margin-left: 15%;
 }
 
+.form-container{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
 .form{
-  background-color: aqua;
   height: 100%;
+  width: 100%;
   max-width: 630px;
-  align-self: center;
 }
 
 #text{
@@ -91,6 +99,7 @@ nav {
 #text2{
   width: 100%;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 p{
@@ -130,4 +139,55 @@ p{
   top: 30px;
   left: calc(80vw - 450px);
   max-height: 740px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.form-row input:first-child {
+  margin-right: 10px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 590px;
+  outline: 1px solid rgb(201, 201, 201);
+}
+
+input::placeholder {
+  color: rgb(201, 201, 201);
+}
+
+button[type="submit"] {
+  font-family: Inter, sans-serif;
+  padding: 15px 20px;
+  background-color: #EFC7CF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 1px solid rgb(201, 201, 201);
+  transition: background-color 0.2s ease;
 }
