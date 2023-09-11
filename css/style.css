@@ -328,6 +328,9 @@ body {
 }
 
 @media (max-width: 767px){
+  .info-container .info .send-mail button {
+    font-size: 3vw;
+  }
   .section-2 {
     display: block;
     margin-top: 5vh;
@@ -356,6 +359,7 @@ body {
   }
   .section-3{
     overflow-x: hidden;
+    border: 1px solid red;
   }
   .section-3 .svg {
     height: 400px;
@@ -381,5 +385,10 @@ body {
     font-size: 5vw;
     font-weight: 900;
     margin-bottom: 50px;
+  }
+  .logo2{
+    border: 1px solid blue;
+    width: 20vw;
+    height: 100%;
   }
 }
